@@ -3,9 +3,10 @@ import groq
 import faiss
 import numpy as np
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from src.config import Config
 
 # :small_blue_diamond: Set Up Groq API Key
-GROQ_API_KEY = "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"
+GROQ_API_KEY = Config.GROQ_API
 class Chatbotprocess:
 
     def __init__(self):

@@ -3,9 +3,10 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_groq import ChatGroq
+from src.config import Config
 
 # Set up Groq API key
-GROQ_API_KEY = "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"
+GROQ_API_KEY = Config.GROQ_API
 llm = ChatGroq(model="llama3-8b-8192", temperature = 0, api_key=GROQ_API_KEY)
 
 class TextSummarization:

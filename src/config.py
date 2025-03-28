@@ -19,3 +19,5 @@ class Config:
     JWT_SECRET_KEY: str = os.environ["JWT_SECRET_KEY"]
     JWT_EXPIRATION_TIME: int = os.environ["JWT_EXPIRATION"]
     JWT_REFRESH_TOKEN_EXPIRATION_TIME: int = os.environ["JWT_EXPIRATION_DAYS"]
+
+    GROQ_API:str = os.environ["GROQ_API_KEY"]
